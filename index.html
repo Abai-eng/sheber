@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Остановите утечку 30% маржи | Sheberlik.ai</title>
+    <!-- Подключение Tailwind CSS для мгновенного рендеринга стилей -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Премиальные геометрические шрифты Space Grotesk и Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0D1117;
+            color: #E6E6E6;
+        }
+        .header-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Кастомный премиальный скроллбар */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0D1117;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1F2937;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #A51D36;
+        }
+        /* Анимация появления слайдов */
+        .fade-in {
+            animation: fadeIn 0.25s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden min-h-screen flex flex-col justify-between">
+
+    <!-- Фоновое жидкостное свечение (Premium Dark Liquid Tech Glow) -->
+    <div class="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-red-950/20 blur-[140px] rounded-full pointer-events-none mix-blend-screen"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-blue-950/15 blur-[140px] rounded-full pointer-events-none mix-blend-screen"></div>
+
+    <!-- ШАПКА БЕЗ НАВИГАЦИОННЫХ ССЫЛОК И УТЕЧЕК (Navigation Leak Shield) -->
+    <header class="w-full py-5 px-6 border-b border-white/5 bg-[#0D1117]/95 backdrop-blur-md sticky top-0 z-40 flex justify-between items-center select-none">
+        <div class="flex items-center gap-2">
+            <div class="w-2.5 h-2.5 rounded-full bg-[#A51D36] animate-pulse"></div>
+            <span class="text-xl font-extrabold tracking-tighter text-white uppercase header-font">
+                Sheberlik.<span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">ai</span>
+            </span>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2 text-xs font-mono text-gray-400 bg-black/40 px-3.5 py-1.5 rounded-full border border-white/5">
+                <svg class="w-3.5 h-3.5 text-[#A51D36] animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>ДО СБРОСА СТОИМОСТИ: <strong class="text-white font-mono" id="top-timer">15:00</strong></span>
+            </div>
+            <div class="hidden md:flex items-center gap-2 text-xs font-mono text-gray-500">
+                <span>СЕРВЕР: PS.KZ (АЛМАТЫ)</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ КОНТЕНТ ВОРОНКИ -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 flex-grow w-full">
+
+        <!-- 1. ГЛАВНЫЙ ЭКРАН (RECESSION-CORE HDR) -->
+        <section class="pt-16 pb-12 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#A51D36]/10 border border-[#A51D36]/20 text-[#A51D36] text-xs font-black mb-8 uppercase tracking-widest select-none">
+                <svg class="w-4 h-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+                КРИЗИС 2026: Макроэкономическое давление в Алматы требует жестких решений
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-black text-white leading-[1.05] tracking-tight mb-8 uppercase header-font select-none">
+                ОСТАНОВИТЕ УТЕЧКУ <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">30% ВАШЕЙ МАРЖИ.</span><br>
+                ОБЕСПЕЧЬТЕ 10X РОСТ ТОО В 2026 ГОДУ.
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-400 font-medium max-w-3xl mx-auto mb-10 leading-relaxed">
+                Пока ваши менеджеры на ресепшене спят или игнорируют звонки, ИИ-ассистент Sheberlik.ai обрабатывает 100% лидов из TikTok, 2GIS и рекламы. Первый звонок клиенту за <span class="text-white font-bold">0.8 секунд</span>.
+            </p>
+
+            <!-- ДЕФИЦИТ МЕСТ (URG) -->
+            <div class="max-w-md mx-auto bg-[#161B22]/60 border border-white/5 p-4 rounded-xl flex justify-around items-center mb-12 shadow-inner select-none">
+                <div class="text-center">
+                    <span class="text-[10px] uppercase tracking-wider text-gray-500 font-bold block mb-1">Свободно лицензий со скидкой</span>
+                    <span class="text-2xl font-black text-red-500 font-mono animate-pulse" id="seats-counter">3 ИЗ 3</span>
+                </div>
+                <div class="h-8 w-[1px] bg-white/10"></div>
+                <div class="text-center">
+                    <span class="text-[10px] uppercase tracking-wider text-gray-500 font-bold block mb-1">Гарантия тарифа</span>
+                    <span class="text-2xl font-black text-white font-mono" id="mid-timer">15:00</span>
+                </div>
+            </div>
+
+            <!-- ИНТЕРАКТИВНЫЙ VSL ПЛЕЕР -->
+            <div class="w-full aspect-video bg-[#161B22] rounded-2xl border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.8)] flex flex-col items-center justify-center mb-12 relative overflow-hidden group">
+                <div id="vsl-placeholder" class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent group-hover:bg-black/40 transition-colors z-10 flex flex-col items-center justify-center p-8">
+                    <button onclick="playVSL()" class="w-20 h-20 bg-[#A51D36] hover:bg-red-600 text-white rounded-full flex items-center justify-center pl-1 shadow-[0_0_50px_rgba(165,29,54,0.4)] transform group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-10 h-10 fill-current text-white" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </button>
+                    <p class="mt-6 text-lg font-bold text-white tracking-wide text-center uppercase header-font">
+                        НАЖМИТЕ PLAY ДЛЯ ПРОСМОТРА КЛИЕНТСКИХ КЕЙСОВ В КАЗАХСТАНЕ
+                    </p>
+                    <span class="text-xs text-gray-500 font-mono mt-1">Обучающий разбор ИИ-интеграций в Алматы // 4:12</span>
+                </div>
+                <div id="vsl-player" class="absolute inset-0 bg-black flex flex-col items-center justify-center p-6 text-center hidden z-20">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-[#A51D36] mb-4"></div>
+                    <p class="text-xs font-mono text-cyan-400">// Загрузка демонстрационного потока голосового Vapi.ai ...</p>
+                    <button onclick="resetVSL()" class="mt-4 text-xs text-red-500 hover:underline">Вернуться назад</button>
+                </div>
+            </div>
+
+            <!-- ПРИЗЫВ К ДЕЙСТВИЮ -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button onclick="scrollToCalculator()" class="w-full sm:w-auto bg-[#A51D36] hover:bg-red-600 text-white text-lg font-black py-5 px-10 rounded-xl shadow-[0_0_35px_rgba(165,29,54,0.3)] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3 uppercase header-font">
+                    Рассчитать потери ОП 
+                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                    </svg>
+                </button>
+                <button onclick="openCheckout()" class="w-full sm:w-auto bg-white/5 hover:bg-white/10 text-white text-lg font-bold py-5 px-10 rounded-xl border border-white/10 transition-all uppercase">
+                    Внедрить систему дожима
+                </button>
+            </div>
+        </section>
+
+        <!-- 2. ИНТЕРАКТИВНЫЙ КАЛЬКУЛЯТОР ФИНАНСОВЫХ ПОТЕРЬ -->
+        <section id="calculator-section" class="py-20 border-t border-white/5 scroll-mt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-white uppercase header-font">Калькулятор финансовой утечки ОП в Алматы</h2>
+                <p class="text-gray-400 mt-2">Рассчитайте упущенную прибыль из-за медлительности менеджеров</p>
+            </div>
+
+            <div class="bg-[#161B22]/80 border border-white/5 rounded-2xl p-6 md:p-8 shadow-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                  
+                    <!-- Ползунки параметров -->
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-2">
+                                <span class="text-gray-300">Месячный объем заявок:</span>
+                                <span class="text-red-500 font-bold font-mono" id="val-leads">400 лидов</span>
+                            </div>
+                            <input type="range" min="100" max="3000" step="50" value="400" id="range-leads" class="w-full h-1.5 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#A51D36]" oninput="updateCalculator()">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-2">
+                                <span class="text-gray-300">Количество сотрудников ОП:</span>
+                                <span class="text-red-500 font-bold font-mono" id="val-staff">3 человек</span>
+                            </div>
+                            <input type="range" min="1" max="10" step="1" value="3" id="range-staff" class="w-full h-1.5 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#A51D36]" oninput="updateCalculator()">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-2">
+                                <span class="text-gray-300">Месячный ФОТ 1 сотрудника:</span>
+                                <span class="text-red-500 font-bold font-mono" id="val-salary">350,000 ₸</span>
+                            </div>
+                            <input type="range" min="150000" max="600000" step="10000" value="350000" id="range-salary" class="w-full h-1.5 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#A51D36]" oninput="updateCalculator()">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-2">
+                                <span class="text-gray-300">Средний чек сделки / услуги (KZT):</span>
+                                <span class="text-red-500 font-bold font-mono" id="val-ticket">30,000 ₸</span>
+                            </div>
+                            <input type="range" min="5000" max="100000" step="5000" value="30000" id="range-ticket" class="w-full h-1.5 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#A51D36]" oninput="updateCalculator()">
+                        </div>
+                    </div>
+
+                    <!-- Вывод калькулятора -->
+                    <div class="bg-black/40 border border-white/5 rounded-xl p-6 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex justify-between text-sm text-gray-400">
+                                <span>Прямой ФОТ персонала ОП:</span>
+                                <span class="text-white font-mono font-bold" id="out-fot">1,050,000 ₸</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-400">
+                                <span>Слито лидов человеком (~30%):</span>
+                                <span class="text-red-400 font-mono font-bold" id="out-leaked">120 лидов</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-400">
+                                <span>Потерянная чистая выручка:</span>
+                                <span class="text-red-400 font-mono font-bold" id="out-lost">3,600,000 ₸</span>
+                            </div>
+                            <div class="border-t border-white/5 pt-4 flex justify-between text-base font-bold text-white">
+                                <span>Издержки ручной системы:</span>
+                                <span class="text-red-500 font-mono" id="out-total">4,650,000 ₸</span>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-red-500/20 pt-4 mt-6 text-center">
+                            <span class="text-[10px] uppercase tracking-widest text-[#A51D36] font-black block mb-1">Реальная экономия с Sheberlik.ai</span>
+                            <p class="text-3xl md:text-4xl font-black text-[#A51D36] font-mono" id="out-savings">
+                                +4,550,030 ₸ <span class="text-xs text-gray-500">/ мес</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-red-500/5 rounded-xl border border-red-500/10 flex gap-3 items-start select-none">
+                    <svg class="w-5 h-5 text-[#A51D36] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        * Потери рассчитываются на основе эмпирических исследований упущенных лидов в СНГ из-за задержки ответов (более 5 минут). Автоматизация сводит этот показатель к нулю.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. EPIPHANY BRIDGE СЛАЙДЕР С ТРИАЛ-КЛОУЗОМ (Error 5 Correction) -->
+        <section class="py-20 border-t border-white/5">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-white uppercase header-font">Разрушение барьеров: Откровение Шеберлик</h2>
+                <p class="text-gray-400 mt-2">Пошаговая деконструкция вашей воронки продаж и разрушение ложных убеждений</p>
+            </div>
+
+            <!-- Слайдер индикаторы -->
+            <div class="flex justify-center gap-2 mb-8">
+                <button onclick="setStage(1)" id="dot-1" class="h-2 rounded-full transition-all duration-300 w-8 bg-[#A51D36]"></button>
+                <button onclick="setStage(2)" id="dot-2" class="h-2 rounded-full transition-all duration-300 w-2 bg-gray-700"></button>
+                <button onclick="setStage(3)" id="dot-3" class="h-2 rounded-full transition-all duration-300 w-2 bg-gray-700"></button>
+                <button onclick="setStage(4)" id="dot-4" class="h-2 rounded-full transition-all duration-300 w-2 bg-gray-700"></button>
+                <button onclick="setStage(5)" id="dot-5" class="h-2 rounded-full transition-all duration-300 w-2 bg-gray-700"></button>
+            </div>
+
+            <div class="bg-[#161B22] border border-white/5 rounded-2xl p-6 md:p-8 min-h-[385px] flex flex-col justify-between shadow-2xl relative">
+                <div id="slide-content" class="fade-in">
+                    <!-- Заполняется динамически через JS -->
+                </div>
+
+                <!-- Триал-Клоуз Кардона (The Bridge) -->
+                <div class="mt-8 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <p class="text-base font-black text-gray-300 italic text-center sm:text-left">
+                        "Вы увидели достаточно информации для принятия решения?"
+                    </p>
+                    <div class="flex gap-3 w-full sm:w-auto">
+                        <button onclick="handleTrialCloseYes()" class="flex-1 sm:flex-none bg-[#A51D36] hover:bg-red-600 text-white font-extrabold text-sm px-6 py-3 rounded-lg transition-transform transform active:scale-95 shadow-lg shadow-[#A51D36]/30 uppercase header-font">
+                            Да, запустить систему
+                        </button>
+                        <button onclick="handleTrialCloseNo()" class="flex-1 sm:flex-none bg-white/5 hover:bg-white/10 text-white font-bold text-sm px-6 py-3 rounded-lg border border-white/10 uppercase" id="slide-next-btn">
+                            Нет, следующий этап
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ОБЪЕКТИВНАЯ АННИГИЛЯЦИЯ ВОЗРАЖЕНИЙ (OBJ - NO COLLAPSIBLES) -->
+        <section class="py-20 border-t border-white/5">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-white uppercase header-font">Разрушение сомнений коммерческого директора</h2>
+                <p class="text-gray-400 mt-2">Прямые ответы на ключевые B2B-вопросы без замалчивания трудностей</p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Objection 1 -->
+                <div class="border-l-4 border-[#A51D36] pl-6 py-2">
+                    <h3 class="text-xl font-bold text-white mb-2">Возражение #1: «Это слишком дорого для нашего бюджета в Алматы»</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        <strong class="text-red-500">Проблема:</strong> Вы правы, 99,970 ₸ — это заметные расходы для небольшого ТОО. Вы привыкли надеяться на удачу и человеческий фактор.
+                    </p>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        <strong class="text-emerald-400">Сдвиг парадигмы и Решение:</strong> Но давайте посмотрим правде в глаза. Ваши менеджеры сливают треть горячих лидов из-за задержки ответов. Потери составляют миллионы тенге упущенной выручки каждый месяц. ИИ окупает себя в первую неделю работы, полностью останавливая утечку трафика. Инвестиция в автоматизацию — это единственный способ сохранить маржу ТОО.
+                    </p>
+                </div>
+
+                <!-- Objection 2 -->
+                <div class="border-l-4 border-cyan-500 pl-6 py-2">
+                    <h3 class="text-xl font-bold text-white mb-2">Возражение #2: «ИИ не сможет общаться так же качественно, как живой человек»</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        <strong class="text-red-500">Проблема:</strong> Совершенно верно. Робот не умеет пить кофе, опаздывать, уставать и грубить клиентам из-за плохого настроения.
+                    </p>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        <strong class="text-emerald-400">Сдвиг парадигмы и Решение:</strong> Голосовое ядро Vapi.ai с задержкой отклика 400 мс распознает контекст, вежливо перехватывает перебивания на русском и казахском языках, мгновенно отправляет КП в WhatsApp и ставит задачи менеджерам. Вы получаете безупречный ОП, работающий без перерывов 24/7.
+                    </p>
+                </div>
+
+                <!-- Objection 3 -->
+                <div class="border-l-4 border-purple-500 pl-6 py-2">
+                    <h3 class="text-xl font-bold text-white mb-2">Возражение #3: «У нас нет времени и ресурсов на сложную интеграцию и программирование»</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        <strong class="text-red-500">Проблема:</strong> Если вы попытаетесь нанимать программистов и настраивать вебхуки самостоятельно, вы потеряете месяцы времени и миллионы тенге.
+                    </p>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        <strong class="text-emerald-400">Сдвиг парадигмы и Решение:</strong> Мы поставляем готовую ИИ-инфраструктуру под ключ. Наша команда за 7 дней подключает ваш домен, настраивает интеграции и WhatsApp Business API на сертифицированном хостинге в Казахстане. Вы только получаете отчеты в CRM и Kaspi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. REVERSAL INVERSION CONTRAST MATRIX (RSK) -->
+        <section class="py-16 border-t border-white/5">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-white uppercase header-font">Матрица выбора: Сценарии действия</h2>
+                <p class="text-gray-400 mt-2">Жесткий математический выбор между бездействием и системным ростом</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Column 1: Cost of Inaction -->
+                <div class="bg-red-950/10 border border-red-500/15 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-red-500 mb-4 flex items-center gap-2 uppercase header-font">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>
+                        </svg>
+                        Стоимость бездействия
+                    </h3>
+                    <ul class="space-y-4 text-xs text-gray-300">
+                        <li class="flex gap-2">
+                            <span class="text-red-500 font-bold">✗</span> Слив до 30% входящего рекламного трафика из-за медленных ответов менеджеров.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-red-500 font-bold">✗</span> Потери выручки ТОО ОП до 2,900,000 ₸ ежемесячно.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-red-500 font-bold">✗</span> Риск штрафа по ст. 79 КоАП РК до 865,000 KZT за хранение логов лидов за рубежом.
+                        </li>
+                        <li class="flex gap-2 border-t border-red-500/10 pt-4 font-mono text-red-400 font-bold">
+                            Итоговая годовая потеря: ~34,800,000 ₸
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: 10X ROI -->
+                <div class="bg-emerald-950/10 border border-emerald-500/15 p-8 rounded-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-emerald-500 text-black text-[9px] font-black uppercase px-3 py-1 rounded-bl-xl font-mono">
+                        Рекомендовано
+                    </div>
+                    <h3 class="text-xl font-bold text-emerald-400 mb-4 flex items-center gap-2 uppercase header-font">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                        </svg>
+                        10X ROI СИСТЕМА
+                    </h3>
+                    <ul class="space-y-4 text-xs text-gray-300">
+                        <li class="flex gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Моментальный автодозвон Vapi.ai за 0.8 секунд после лида из TikTok.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> 100% занесение стенограммы и данных о звонках роботом в Kommo CRM.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Локализованный, безопасный суверенный бекенд на серверах в Алматы (PS.kz).
+                        </li>
+                        <li class="flex gap-2 border-t border-emerald-500/10 pt-4 font-mono text-emerald-400 font-bold">
+                            Итоговая годовая выгода: +34,800,000 ₸
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="bg-[#161B22] border-2 border-red-500/20 rounded-3xl p-8 relative overflow-hidden shadow-2xl flex flex-col md:flex-row items-center gap-8">
+                <div class="shrink-0 w-24 h-24 rounded-full border-4 border-red-500/40 flex flex-col items-center justify-center p-2 relative bg-black/50 select-none shadow-[0_0_30px_rgba(239,68,68,0.15)]">
+                    <svg class="w-10 h-10 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                    <span class="text-[8px] font-mono text-center font-bold text-gray-400 mt-1">10X RULE</span>
+                </div>
+                <div class="flex-grow space-y-2">
+                    <h4 class="text-lg font-black text-white uppercase header-font">Уведомление об ответственности сторон</h4>
+                    <p class="text-xs text-gray-400 leading-relaxed font-medium">
+                        Мы берем все технические риски интеграции на себя. Однако, вы должны осознавать: **успех — это ваша обязанность, долг и ответственность**. ИИ — это совершенный инструмент удержания внимания, но результат зависит от вашей готовности перестроить бизнес-процессы компании. Если вы ищете волшебную таблетку без вашего вовлечения — данный продукт вам не подходит.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. МАТЕМАТИЧЕСКИЙ VALUE STACK (VS) -->
+        <section id="value-stack" class="py-16 border-t border-white/5 scroll-mt-20">
+            <div class="bg-[#161B22]/40 border border-[#A51D36]/15 rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 p-4">
+                    <span class="text-xs font-mono text-[#A51D36] bg-[#A51D36]/10 px-3 py-1 rounded-full border border-[#A51D36]/20 uppercase tracking-widest font-black">
+                        Экономия 88%
+                    </span>
+                </div>
+
+                <h2 class="text-3xl md:text-4xl font-black text-white text-center mb-10 uppercase header-font">6-компонентная декомпозиция оффера:</h2>
+                
+                <div class="space-y-6 mb-12 text-sm">
+                    <div class="flex justify-between items-center border-b border-white/5 pb-4">
+                        <div>
+                            <h4 class="font-bold text-white text-lg">1. Opportunity Switch: ИИ-Сшивка с TikTok API</h4>
+                            <p class="text-xs text-gray-500 mt-0.5">Полный перехват лидов и автоматизация лид-форм.</p>
+                        </div>
+                        <span class="text-red-500 font-mono line-through font-semibold">150 000 ₸</span>
+                    </div>
+
+                    <div class="flex justify-between items-center border-b border-white/5 pb-4">
+                        <div>
+                            <h4 class="font-bold text-white text-lg">2. The Tools: Тюнинг и кастом-промптинг Vapi.ai</h4>
+                            <p class="text-xs text-gray-500 mt-0.5">SIP-телефония с локальной авторизацией номеров (+7).</p>
+                        </div>
+                        <span class="text-red-500 font-mono line-through font-semibold">250 000 ₸</span>
+                    </div>
+
+                    <div class="flex justify-between items-center border-b border-white/5 pb-4">
+                        <div>
+                            <h4 class="font-bold text-white text-lg">3. Tangible #1: n8n Сценарии + Kommo CRM Сшивка</h4>
+                            <p class="text-xs text-gray-500 mt-0.5">Автоматическая запись стенограмм и задач менеджерам.</p>
+                        </div>
+                        <span class="text-red-500 font-mono line-through font-semibold">300 000 ₸</span>
+                    </div>
+
+                    <div class="flex justify-between items-center border-b border-white/5 pb-4">
+                        <div>
+                            <h4 class="font-bold text-white text-lg">4. Tangible #2: Готовый пакет скриптов дожима Кардона</h4>
+                            <p class="text-xs text-gray-500 mt-0.5">Встроенные ИИ-реплики преодоления барьера «Подумаю».</p>
+                        </div>
+                        <span class="text-red-500 font-mono line-through font-semibold">100 000 ₸</span>
+                    </div>
+
+                    <div class="flex justify-between items-center border-b border-white/5 pb-4">
+                        <div>
+                            <h4 class="font-bold text-white text-lg">5. Tangible #3: Эквайринг-шлюз Kaspi Pay Headless</h4>
+                            <p class="text-xs text-gray-500 mt-0.5">Мгновенная отправка QR счетов в WhatsApp.</p>
+                        </div>
+                        <span class="text-red-500 font-mono line-through font-semibold">150 000 ₸</span>
+                    </div>
+
+                    <div class="flex justify-between items-center border-b border-white/5 pb-4">
+                        <div>
+                            <h4 class="font-bold text-white text-lg">6. Exclusive Bonus: Аудит ОП от ведущего архитектора</h4>
+                            <p class="text-xs text-gray-500 mt-0.5">1-on-1 Strategy & Implementation Call для быстрой интеграции.</p>
+                        </div>
+                        <span class="text-red-500 font-mono line-through font-semibold">100 000 ₸</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center mb-12 font-mono">
+                    <span class="text-xl font-bold text-gray-400">Суммарная ценность пакета:</span>
+                    <span class="text-2xl font-black text-red-500 line-through">1,050,000 ₸</span>
+                </div>
+
+                <!-- Карточка цены с обратным отсчетом -->
+                <div class="text-center bg-black/60 p-8 rounded-2xl border border-[#A51D36]/20 shadow-inner relative">
+                    <div class="absolute top-[-15px] inset-x-0 flex justify-center">
+                        <span class="bg-[#A51D36] text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest border border-red-500 animate-bounce" id="seats-banner">
+                            Только 3 слота со скидкой!
+                        </span>
+                    </div>
+
+                    <p class="text-xs uppercase tracking-[0.2em] text-[#A51D36] font-black mb-1 mt-4">Месячное абонентское сопровождение воронки</p>
+                    <p class="text-6xl font-black text-white font-mono mb-6">
+                        99,970 ₸ <span class="text-2xl text-gray-500 font-medium">/ мес</span>
+                    </p>
+                    
+                    <button onclick="openCheckout()" class="w-full bg-gradient-to-r from-red-600 to-orange-500 text-white text-xl md:text-2xl font-black py-6 px-8 rounded-xl shadow-[0_0_50px_rgba(165,29,54,0.4)] transition-all transform hover:scale-[1.02] flex items-center justify-center gap-3 active:scale-95 uppercase header-font">
+                        ЗАПУСТИТЬ ИИ-ИНФРАСТРУКТУРУ 
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </button>
+                    <p class="mt-4 text-xs text-gray-400">Таймер фиксации акционной стоимости: <span class="text-white font-mono font-bold" id="bottom-timer">15:00</span></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. ДВУХЭТАПНАЯ ФОРМА ОПЛАТЫ (Error 2 Correction) -->
+    <div id="checkout-modal" class="fixed inset-0 bg-black/95 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-[#161B22] border border-white/10 rounded-2xl w-full max-w-md overflow-hidden shadow-2xl relative">
+            <button onclick="closeCheckout()" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-sm select-none">✕</button>
+
+            <!-- Шаг 1: Контактный интейк (Сбор данных в CRM) -->
+            <div id="step-intake" class="p-6 md:p-8">
+                <div class="text-center mb-6">
+                    <svg class="w-10 h-10 text-[#A51D36] mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                    <h3 class="text-xl font-black text-white uppercase header-font">Регистрация контура</h3>
+                    <p class="text-xs text-gray-400 mt-1">Шаг 1 из 2: Закрепление контактов в amoCRM</p>
+                </div>
+                <form onsubmit="handleIntakeSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-wider text-gray-400 font-bold mb-1">Имя Руководителя:</label>
+                        <input type="text" id="inp-name" required placeholder="Арман Кусаинов" class="w-full bg-[#0D1117] border border-white/10 rounded-lg p-3 text-sm text-white focus:outline-none focus:border-[#A51D36] transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-wider text-gray-400 font-bold mb-1">Название ТОО / ИП:</label>
+                        <input type="text" id="inp-company" required placeholder="ТОО Almaty Digital" class="w-full bg-[#0D1117] border border-white/10 rounded-lg p-3 text-sm text-white focus:outline-none focus:border-[#A51D36] transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-wider text-gray-400 font-bold mb-1">Номер телефона (11 цифр):</label>
+                        <input type="tel" id="inp-phone" required placeholder="+7 701 123 45 67" class="w-full bg-[#0D1117] border border-white/10 rounded-lg p-3 text-sm text-white focus:outline-none focus:border-[#A51D36] transition-colors">
+                    </div>
+                    <div class="space-y-2 pt-2">
+                        <label class="flex gap-2.5 items-start cursor-pointer select-none">
+                            <input type="checkbox" required class="mt-0.5 accent-[#A51D36]">
+                            <span class="text-[9px] text-gray-400 leading-relaxed">Даю безусловное согласие на сбор, хранение на серверах PS.KZ и трансграничную передачу моих персональных данных в рамках ст. 79 Закона о Персональных данных РК.</span>
+                        </label>
+                        <label class="flex gap-2.5 items-start cursor-pointer select-none">
+                            <input type="checkbox" required class="mt-0.5 accent-[#A51D36]">
+                            <span class="text-[9px] text-gray-400 leading-relaxed">Я согласен получать сообщения в WhatsApp и на совершение мгновенных звонков ИИ-ассистента в рамках правил информирования ст. 641-1 КоАП РК.</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="w-full bg-[#A51D36] hover:bg-red-600 text-white font-extrabold text-sm p-3.5 rounded-lg mt-4 transition-all flex justify-center items-center gap-2 active:scale-95 uppercase">
+                        Перейти к оплате KASPI QR 
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Шаг 2: Только после фиксации контакта — Выставление счета Kaspi QR с Bump Offer -->
+            <div id="step-billing" class="p-6 md:p-8 text-center hidden">
+                <svg class="w-12 h-12 text-[#A51D36] mx-auto mb-3 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                </svg>
+                <h3 class="text-lg font-black text-white uppercase header-font">Шаг 2 из 2: Оплата счета</h3>
+                <p class="text-xs text-gray-400 mt-1">Отсканируйте Kaspi QR-код для активации лицензии</p>
+
+                <!-- BUMP OFFER CONTEXT (MC) -->
+                <div onclick="toggleBump()" id="bump-box" class="my-4 p-4 rounded-xl border text-left cursor-pointer transition-all bg-black/30 border-white/5 hover:border-white/10 select-none">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="bump-checkbox" class="accent-[#A51D36]" pointer-events-none>
+                        <div class="flex-grow">
+                            <span class="text-[10px] font-mono text-[#A51D36] font-black uppercase tracking-wider block mb-0.5">ВЫГОДНОЕ ДОПОЛНЕНИЕ (BUMP)</span>
+                            <h4 class="text-xs font-bold text-white leading-tight">Добавить Экспресс-Пакет Скриптов Дожима ОП (+15,000 ₸)</h4>
+                            <p class="text-[9px] text-gray-400 mt-1 leading-relaxed">
+                                Полная ИИ-сборка скриптов дожима Кардона для преодоления возражений. Обычная стоимость: <span class="line-through">50,000 ₸</span>. Оплатите в этом чеке всего за 15,000 ₸.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- QR Элемент -->
+                <div class="my-6 w-40 h-40 bg-white p-3.5 rounded-xl mx-auto flex flex-col items-center justify-center border-4 border-red-500 relative overflow-hidden select-none">
+                    <div class="absolute inset-x-0 h-0.5 bg-red-500 animate-bounce top-0"></div>
+                    <div class="grid grid-cols-4 gap-1.5 w-full h-full opacity-70">
+                        <div class="bg-black rounded-xs"></div><div class="bg-transparent"></div><div class="bg-black"></div><div class="bg-black"></div>
+                        <div class="bg-transparent"></div><div class="bg-black"></div><div class="bg-transparent"></div><div class="bg-transparent"></div>
+                        <div class="bg-black"></div><div class="bg-transparent"></div><div class="bg-black"></div><div class="bg-transparent"></div>
+                        <div class="bg-black"></div><div class="bg-black"></div><div class="bg-transparent"></div><div class="bg-black"></div>
+                    </div>
+                    <div class="absolute bg-black px-2 py-1 text-[8px] tracking-widest text-white border border-white/10 rounded font-mono font-bold">KASPI_PAY_QR</div>
+                </div>
+
+                <!-- Динамическая стоимость счета -->
+                <div class="mb-4 text-center">
+                    <span class="text-[10px] text-gray-500 uppercase tracking-wider block">Итого к оплате в Kaspi:</span>
+                    <strong class="text-2xl font-black text-white font-mono" id="kaspi-price-label">
+                        99,970 ₸
+                    </strong>
+                </div>
+
+                <div class="space-y-4">
+                    <button onclick="simulatePaymentSuccess()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs py-3 rounded-lg flex items-center justify-center gap-2 transition-all active:scale-95">
+                        ИМИТИРОВАТЬ УСПЕШНУЮ ОПЛАТУ (для демо)
+                    </button>
+                    <div class="flex items-center justify-center gap-2 text-[10px] font-mono text-gray-500">
+                        <svg class="w-3.5 h-3.5 animate-spin text-[#A51D36]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 4.79M9 11l3 3L22 4"/>
+                        </svg>
+                        <span>Ожидание транзакционного вебхука от Kaspi API...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Шаг 3: Успешный транзакционный вебхук -->
+            <div id="step-success" class="p-6 md:p-8 text-center hidden">
+                <svg class="w-12 h-12 text-emerald-400 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                <h3 class="text-xl font-black text-white uppercase header-font">Оплата Подтверждена</h3>
+                <p class="text-xs text-gray-400 mt-1">Транзакция успешно зафиксирована на локальном VPS.</p>
+                
+                <div class="my-5 p-4 bg-black/40 rounded-xl border border-white/5 text-left text-[9px] font-mono space-y-1">
+                    <p class="text-gray-500">// n8n JSON Payload Capture:</p>
+                    <p class="text-[#A51D36]">org_name: "<span id="dbg-company"></span>"</p>
+                    <p class="text-emerald-400">client_phone: "<span id="dbg-phone"></span>"</p>
+                    <p class="text-emerald-400">license_allocated: "ACTIVE_10X"</p>
+                    <p class="text-emerald-400">bump_offer_added: "<span id="dbg-bump">NO</span>"</p>
+                </div>
+
+                <div class="bg-emerald-500/5 border border-emerald-500/10 p-3.5 rounded-xl text-left flex gap-2.5 items-start mb-6">
+                    <svg class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                    <p class="text-[10px] text-gray-400 leading-relaxed font-medium">
+                        <strong class="text-emerald-400 font-bold block mb-0.5">ВНИМАНИЕ РУКОВОДИТЕЛЮ:</strong> Сценарий n8n отправил пакет инструкций в WhatsApp. Первичный звонок от ИИ-помощника поступит в течение 60 секунд.
+                    </p>
+                </div>
+
+                <button onclick="closeCheckout()" class="w-full bg-[#0D1117] hover:bg-black text-white text-xs font-bold p-3 rounded-lg border border-white/10">
+                    Вернуться в воронку
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER: n8n ПАЙПЛАЙН И КОНСОЛЬ -->
+    <footer class="w-full bg-[#161B22]/95 border-t border-white/10 p-4 font-mono text-[10px] backdrop-blur-md flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 z-30 select-none">
+        <div class="flex items-center gap-3 shrink-0">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+            <span class="text-gray-300 font-bold tracking-wider text-[9px]">N8N PIPELINE & PDPL AUDITOR:</span>
+        </div>
+        <div class="flex-grow overflow-x-auto whitespace-nowrap text-emerald-400 scrollbar-none text-[9px]" id="audit-log">
+            [SYSTEM] Экономический контур инициализирован. Скрытая страница /roi изолирована от индексации.
+        </div>
+        <div class="flex gap-2 shrink-0">
+            <span class="px-2 py-1 bg-white/5 rounded text-gray-400 text-[8px] border border-white/5">PROD_MODE</span>
+            <span class="px-2 py-1 bg-[#A51D36]/10 text-[#A51D36] text-[8px] rounded border border-[#A51D36]/20 font-bold">ALMATY VPS OK</span>
+        </div>
+    </footer>
+
+    <!-- СЦЕНАРИИ РАБОТЫ САЙТА (VANILLA JS STATE ENGINE) -->
+    <script>
+        // --- Глобальные Состояния ---
+        let timeLeft = 900; // 15 минут в секундах
+        let seatsLeft = 3;
+        let activeStage = 1;
+        let bumpSelected = false;
+
+        const stageData = [
+            {
+                phase: "Секрет #1 // Смена Ведра (The Vehicle)",
+                title: "Традиционные сайты мертвы. Истинный проводник — ИИ-ассистент",
+                desc1: "Большинство предпринимателей в Алматы думают, что для масштабирования им нужен красивый имиджевый сайт. Это иллюзия. Красивые сайты рассеивают внимание и сливают рекламный бюджет в TikTok.",
+                desc2: "Это как пытаться везти тонну кирпичей на спортивном суперкаре. Красиво, но бесполезно. Истинное решение — жесткая, бесшовная ИИ-автоматизация ОП, перехватывающая лиды за миллисекунды."
+            },
+            {
+                phase: "Секрет #2 // Человеческий Фактор (Internal Belief)",
+                title: "Ваши менеджеры не ленивы. Они просто люди",
+                desc1: "Вы можете бесконечно отправлять ваш ОП на тренинги по продажам, штрафовать их или мотивировать. Но физиология неизменна: человек засыпает, устает, отвлекается на звонки близких и перегружается.",
+                desc2: "ИИ-ассистент Vapi.ai не требует мотивации, не просит отпуск и не болеет. Он делает дожим хладнокровно и последовательно 24 часа в сутки."
+            },
+            {
+                phase: "Секрет #3 // Внешний Кризис (External Belief)",
+                title: "Кризис 2026 года — ваш главный рычаг роста",
+                desc1: "Вы можете оправдывать спад продаж инфляцией или изменением налогов. Но правда в том, что в период кризиса выигрывает тот, кто закупает клиентов дешевле и обрабатывает их быстрее.",
+                desc2: "Затраты на привлечение из TikTok падают на 80% по сравнению с Meta. Скорость реакции ИИ перехватывает горячий спрос у медленных конкурентов."
+            },
+            {
+                phase: "Этап 4 // Эквайринг-Триггер",
+                title: "Бесшовная сшивка Kaspi QR",
+                desc1: "Уберите препятствия при оплате. Наш ИИ автоматически формирует счета по QR и отправляет платежные линки прямо в WhatsApp.",
+                desc2: "Клиент платит мгновенно в один клик без перехода на сторонние тяжелые шлюзы."
+            },
+            {
+                phase: "Этап 5 // Юридическая Броня",
+                title: "Абсолютный комплаенс РК на PS.kz",
+                desc1: "Базы данных, записи звонков и логи согласий шифруются и хранятся исключительно в дата-центрах на территории Республики Казахстан.",
+                desc2: "Полное соответствие Статье 79 КоАП РК гарантирует безопасность вашей компании."
+            }
+        ];
+
+        // --- Вечнозеленый Таймер (Evergreen Timer) ---
+        function runTimer() {
+            setInterval(() => {
+                if (timeLeft <= 1) {
+                    timeLeft = 900;
+                    logConsole('Вечнозеленый таймер обновлен для удержания внимания.');
+                } else {
+                    timeLeft--;
+                }
+                const m = Math.floor(timeLeft / 60);
+                const s = timeLeft % 60;
+                const formatted = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+                
+                document.getElementById('top-timer').innerText = formatted;
+                document.getElementById('mid-timer').innerText = formatted;
+                document.getElementById('bottom-timer').innerText = formatted;
+            }, 1000);
+        }
+
+        // --- Дефицит Мест (Scarcity) ---
+        function runScarcity() {
+            setInterval(() => {
+                if (seatsLeft > 1) {
+                    seatsLeft--;
+                    document.getElementById('seats-counter').innerText = `${seatsLeft} ИЗ 3`;
+                    document.getElementById('seats-banner').innerText = `Только ${seatsLeft} слота со скидкой!`;
+                    logConsole(`Дефицит обновлен! Свободных слотов осталось: ${seatsLeft}`);
+                }
+            }, 45000);
+        }
+
+        // --- Логгер в подвале сайта ---
+        function logConsole(message) {
+            document.getElementById('audit-log').innerText = `[n8n_PIPELINE] ${message}`;
+        }
+
+        // --- Управление Видео (VSL) ---
+        function playVSL() {
+            document.getElementById('vsl-placeholder').classList.add('hidden');
+            document.getElementById('vsl-player').classList.remove('hidden');
+            logConsole('VSL-видео запущено пользователем.');
+        }
+
+        function resetVSL() {
+            document.getElementById('vsl-player').classList.add('hidden');
+            document.getElementById('vsl-placeholder').classList.remove('hidden');
+            logConsole('VSL-видео возвращено на заставку.');
+        }
+
+        // --- Скролл к калькулятору ---
+        function scrollToCalculator() {
+            document.getElementById('calculator-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // --- Калькулятор ROI ---
+        function updateCalculator() {
+            const leads = parseInt(document.getElementById('range-leads').value);
+            const staff = parseInt(document.getElementById('range-staff').value);
+            const salary = parseInt(document.getElementById('range-salary').value);
+            const ticket = parseInt(document.getElementById('range-ticket').value);
+
+            // Обновление лейблов
+            document.getElementById('val-leads').innerText = `${leads} лидов`;
+            document.getElementById('val-staff').innerText = `${staff} человек`;
+            document.getElementById('val-salary').innerText = `${salary.toLocaleString()} ₸`;
+            document.getElementById('val-ticket').innerText = `${ticket.toLocaleString()} ₸`;
+
+            // Вычисление
+            const monthlyStaffOverhead = staff * salary;
+            const leaked = Math.round(leads * 0.30);
+            const lost = leaked * ticket;
+            const total = monthlyStaffOverhead + lost;
+            const savings = total - 99970;
+
+            // Рендер результатов
+            document.getElementById('out-fot').innerText = `${monthlyStaffOverhead.toLocaleString()} ₸`;
+            document.getElementById('out-leaked').innerText = `${leaked} лидов`;
+            document.getElementById('out-lost').innerText = `${lost.toLocaleString()} ₸`;
+            document.getElementById('out-total').innerText = `${total.toLocaleString()} ₸`;
+            document.getElementById('out-savings').innerText = `+${savings.toLocaleString()} ₸ / мес`;
+
+            logConsole(`Калькулятор: Лидов: ${leads} // Слив: ${leaked} // Потери: ${lost.toLocaleString()} ₸ // Net ROI: +${savings.toLocaleString()} ₸.`);
+        }
+
+        // --- FAB Слайдер Лидов ---
+        function setStage(stageIndex) {
+            activeStage = stageIndex;
+            const data = stageData[activeStage - 1];
+            
+            // Сброс и замена стилей точек
+            for (let i = 1; i <= 5; i++) {
+                const dot = document.getElementById(`dot-${i}`);
+                if (i === activeStage) {
+                    dot.className = "h-2 rounded-full transition-all duration-300 w-8 bg-[#A51D36]";
+                } else {
+                    dot.className = "h-2 rounded-full transition-all duration-300 w-2 bg-gray-700";
+                }
+            }
+
+            // Переключение контента слайда
+            const container = document.getElementById('slide-content');
+            container.innerHTML = `
+                <span class="text-[10px] font-mono text-[#A51D36] uppercase tracking-widest block mb-2">${data.phase}</span>
+                <h3 class="text-2xl font-black text-white mb-4 header-font">${data.title}</h3>
+                <div class="space-y-3">
+                    <p class="text-sm text-gray-400 leading-relaxed">${data.desc1}</p>
+                    <p class="text-sm text-gray-300 font-medium italic">${data.desc2}</p>
+                </div>
+            `;
+
+            const btn = document.getElementById('slide-next-btn');
+            if (activeStage === 5) {
+                btn.innerText = "Повторить заново";
+            } else {
+                btn.innerText = "Нет, следующий этап";
+            }
+        }
+
+        function handleTrialCloseNo() {
+            if (activeStage < 5) {
+                setStage(activeStage + 1);
+                logConsole(`Клик "Нет" в триал-клоузе. Переход к этапу ${activeStage}.`);
+            } else {
+                setStage(1);
+                logConsole('Перезапуск цикла слайдера.');
+            }
+        }
+
+        function handleTrialCloseYes() {
+            logConsole('FAB триал-клоуз подтвержден ("Да"). Перенаправление на Step 1 Checkout.');
+            openCheckout();
+        }
+
+        // --- Управление формой оформления заказа (2-Step Order Form) ---
+        function openCheckout() {
+            document.getElementById('checkout-modal').classList.remove('hidden');
+            document.getElementById('step-intake').classList.remove('hidden');
+            document.getElementById('step-billing').classList.add('hidden');
+            document.getElementById('step-success').classList.add('hidden');
+            logConsole('Форма заказа открыта. Ожидание лид-информации.');
+        }
+
+        function closeCheckout() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+            logConsole('Форма заказа закрыта пользователем.');
+        }
+
+        function handleIntakeSubmit(event) {
+            event.preventDefault();
+            
+            // Фиксация введенных данных
+            const name = document.getElementById('inp-name').value;
+            const company = document.getElementById('inp-company').value;
+            const phone = document.getElementById('inp-phone').value;
+
+            // Запись в отладочный блок Шага 3
+            document.getElementById('dbg-company').innerText = company;
+            document.getElementById('dbg-phone').innerText = phone;
+
+            logConsole(`[CRM_DISPATCH] Лид зафиксирован: ${name} (${company}). Данные успешно отправлены в amoCRM.`);
+            
+            // Переключение на Шаг 2 (Оплата)
+            document.getElementById('step-intake').classList.add('hidden');
+            document.getElementById('step-billing').classList.remove('hidden');
+            logConsole('Шаг 2: Генерация счета в Kaspi API.');
+        }
+
+        // --- Управление Bump Offer ---
+        function toggleBump() {
+            bumpSelected = !bumpSelected;
+            const checkbox = document.getElementById('bump-checkbox');
+            const box = document.getElementById('bump-box');
+            const priceLabel = document.getElementById('kaspi-price-label');
+            const dbgBump = document.getElementById('dbg-bump');
+
+            checkbox.checked = bumpSelected;
+
+            if (bumpSelected) {
+                box.className = "my-4 p-4 rounded-xl border text-left cursor-pointer transition-all bg-red-950/20 border-red-500/40 select-none";
+                priceLabel.innerText = "114,970 ₸";
+                dbgBump.innerText = "YES (+15,000 ₸)";
+                logConsole('Bump Offer добавлен к счету. Сумма пересчитана: 114,970 ₸.');
+            } else {
+                box.className = "my-4 p-4 rounded-xl border text-left cursor-pointer transition-all bg-black/30 border-white/5 hover:border-white/10 select-none";
+                priceLabel.innerText = "99,970 ₸";
+                dbgBump.innerText = "NO";
+                logConsole('Bump Offer удален. Сумма пересчитана: 99,970 ₸.');
+            }
+        }
+
+        function simulatePaymentSuccess() {
+            logConsole('[WEBHOOK] Kaspi Pay Webhook зафиксировал успешную оплату.');
+            document.getElementById('step-billing').classList.add('hidden');
+            document.getElementById('step-success').classList.remove('hidden');
+            logConsole('[ONBOARDING] Сценарий n8n запустил WhatsApp-рассылку соглашений и доступов.');
+        }
+
+        // --- Инициализация при загрузке ---
+        window.onload = function() {
+            runTimer();
+            runScarcity();
+            setStage(1);
+        }
+    </script>
+</body>
+</html>
